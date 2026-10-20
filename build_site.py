@@ -4,6 +4,7 @@ from pathlib import Path
 from html import escape as e
 import json
 import shutil
+from product_home import render_home
 
 ROOT = Path(__file__).resolve().parent
 data = json.loads((ROOT / 'content.json').read_text())
@@ -13,6 +14,11 @@ shutil.copyfile(ROOT / 'assets/icon.png', out / 'icon.png')
 
 def page(lang, kind):
     zh = lang == 'zh'
+    if kind == 'home':
+        dest = out / ('' if zh else 'en')
+        dest.mkdir(parents=True, exist_ok=True)
+        (dest / 'index.html').write_text(render_home(lang, data['email']))
+        return
     prefix = '' if zh else '/en'
     privacy, support = ('隐私政策', '使用支持') if zh else ('Privacy', 'Support')
     title = {'home': '让音乐，留在你的故事里。' if zh else 'Keep your music. Keep your stories.',
@@ -48,3 +54,7 @@ for lang in ['zh', 'en']:
 shutil.copyfile(ROOT / 'style.css', out / 'style.css')
 (out / 'robots.txt').write_text('User-agent: *\nAllow: /\n')
 print('Built 6 static pages with local styles and artwork.')
+
+shutil.copyfile(ROOT / 'product.css', out / 'product.css')
+shutil.copytree(ROOT / 'assets/product', out / 'assets', dirs_exist_ok=True)
+(out / '.nojekyll').touch()
