@@ -21,6 +21,10 @@
         "CloudKit 数据保存在你的私人 iCloud 数据库中，可能占用你的 iCloud 储存空间。Apple 负责该服务的账户和基础设施处理；App 不要求你向开发者提供 Apple 账户密码。App 使用系统选择器获取你选择的目录和图片，保存目录访问授权以供再次打开；后台音频和通知能力用于播放与同步。你可以在系统设置中管理相关权限和 iCloud 使用。"
       ],
       [
+        "App 内购买与权益",
+        "在提供 Pro 的版本中，订阅和永久买断由 Apple App Store 与 StoreKit 处理。App 在设备上读取并验证 Apple 签名的交易、商品标识、有效期以及撤销或退款状态，用于解锁功能和恢复购买。Apple 处理付款与相关账户资料；开发者不接收银行卡号或 Apple 账户密码。App 不向开发者服务器或 CloudKit 上传收据、交易证明或购买账户资料，也不把 iCloud 账户当作付款证明。订阅到期后保留已有本机资料；恢复购买使用系统的媒体与购买项目账户。购买功能仍在发行准备与测试中，是否可购买及实际价格以 App 内 Apple 商店提供的信息为准。"
+      ],
+      [
         "主动触发的在线资料查询",
         "当你使用资料或封面补全时，歌曲标题、艺术家、专辑等查询条件可能发送到 MusicBrainz；封面图片通过 Cover Art Archive 及其资源托管服务获取。使用听歌识别时，本机生成的音频指纹、时长及你填写的 AcoustID Client Key 会发送到 AcoustID，不发送音频文件。服务端还会接收完成网络请求所需的 IP 地址和技术请求信息。第三方的保留及使用规则由其各自政策约束；不使用这些查询功能即可避免相应查询。"
       ],
@@ -38,7 +42,7 @@
       ],
       [
         "更新",
-        "当功能、服务或数据处理方式发生变化时，我们会更新本页并修改日期。正式版本的支付功能及其隐私说明如有增加，将按实际实现更新；本政策不表示尚未上线的购买功能已经可用。"
+        "当功能、服务或数据处理方式发生变化时，我们会更新本页并修改日期。"
       ]
     ],
     "en": [
@@ -59,6 +63,10 @@
         "Your CloudKit information is stored in your private iCloud database and may count toward your iCloud storage. Apple operates the account and service infrastructure. The app does not ask you to give the developer your Apple account password. System pickers grant access to directories and images you select; saved directory permissions allow later access. Background audio and notification capabilities support playback and synchronization. You can manage permissions and iCloud use in system settings."
       ],
       [
+        "In-app purchases and access",
+        "In versions offering Pro, Apple App Store and StoreKit handle subscriptions and the lifetime purchase. The app reads and verifies Apple-signed transactions, product identifiers, expiry and revocation or refund status on the device to unlock features and restore purchases. Apple processes payments and related account information; the developer does not receive card numbers or your Apple account password. The app does not upload receipts, transaction proof or purchase-account information to a developer server or CloudKit, and does not treat an iCloud account as proof of payment. Existing local information is retained after subscription expiry. Restore Purchases uses the system Media & Purchases account. Purchasing is still being prepared and tested for release; availability and actual prices are determined by the Apple store information shown in the app."
+      ],
+      [
         "Online lookups you initiate",
         "When you request metadata or artwork, search information such as song title, artist and album may be sent to MusicBrainz. Artwork is retrieved through Cover Art Archive and its asset-hosting services. Audio identification sends a locally generated fingerprint, duration and your AcoustID Client Key to AcoustID, not the audio file. These services also receive IP addresses and technical request information needed for the connection. Their own policies govern retention and use. You can avoid these requests by not using the corresponding lookup features."
       ],
@@ -76,7 +84,7 @@
       ],
       [
         "Changes",
-        "We will update this page and its date when features, services or data handling change. If payment features are added to a released version, their privacy information will be updated to match the implementation. This policy does not imply that unreleased purchasing features are available."
+        "We will update this page and its date when features, services or data handling change."
       ]
     ]
   },
