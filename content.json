@@ -1,0 +1,137 @@
+{
+  "origin": "https://kenshane2026.github.io/memory-music-support",
+  "email": "kenapple9527@gmail.com",
+  "updated": "2026-10-20",
+  "privacy": {
+    "zh": [
+      [
+        "适用范围与联系",
+        "本政策适用于 Memory Music 的 iPhone、iPad 和 Mac 应用，以及本隐私与支持网站。Memory Music 以本地音乐整理与播放为核心。隐私或支持问题请联系开发者：kenapple9527@gmail.com。政策更新日期：2026 年 10 月 20 日。"
+      ],
+      [
+        "本机音乐与资料",
+        "你选择的音乐文件由你自行保管。App 在本机保存歌曲资料、来源路径、标签、智能分类、歌单、记忆备注、播放记录、封面及歌词等，用于整理、播放和本机推荐。App 不提供音乐下载，也不会将原始音频上传到开发者服务器或 CloudKit。移除资料记录与删除本地文件是不同操作；删除本地音乐需要你明确选择和确认。"
+      ],
+      [
+        "iCloud 整理信息同步",
+        "在支持同步的版本中，App 使用 Apple CloudKit 的私人数据库，在同一 iCloud 账户的设备之间自动同步歌曲识别资料（包括内容哈希、可用的音频指纹和必要歌曲信息）、标签、备注、歌单、分类规则、播放记录，以及关联的封面图片和文本歌词。同步还使用应用生成的设备标识、版本及操作信息。音频文件、完整 SQLite 数据库、目录授权书签和本机绝对路径不作为同步载荷上传。图片保留导入时的文件内容，可能包含其原有元数据。"
+      ],
+      [
+        "Apple 账户与权限",
+        "CloudKit 数据保存在你的私人 iCloud 数据库中，可能占用你的 iCloud 储存空间。Apple 负责该服务的账户和基础设施处理；App 不要求你向开发者提供 Apple 账户密码。App 使用系统选择器获取你选择的目录和图片，保存目录访问授权以供再次打开；后台音频和通知能力用于播放与同步。你可以在系统设置中管理相关权限和 iCloud 使用。"
+      ],
+      [
+        "主动触发的在线资料查询",
+        "当你使用资料或封面补全时，歌曲标题、艺术家、专辑等查询条件可能发送到 MusicBrainz；封面图片通过 Cover Art Archive 及其资源托管服务获取。使用听歌识别时，本机生成的音频指纹、时长及你填写的 AcoustID Client Key 会发送到 AcoustID，不发送音频文件。服务端还会接收完成网络请求所需的 IP 地址和技术请求信息。第三方的保留及使用规则由其各自政策约束；不使用这些查询功能即可避免相应查询。"
+      ],
+      [
+        "广告、跟踪与支持邮件",
+        "当前应用未集成广告、跨应用广告跟踪或开发者自建的行为分析服务。本机推荐使用你的资料与播放记录；不建立广告画像。如果你主动发送支持邮件，你的邮箱、正文和附件会通过邮件服务送达开发者，仅用于处理问题和必要的后续沟通。请勿发送密码、完整私人曲库或不必要的敏感信息。"
+      ],
+      [
+        "保留、导出与删除",
+        "你可以使用应用提供的备份功能导出资料，并在应用内管理或删除支持删除的记录。删除状态需要同步机会才能传播；同步历史、删除标记和备份可能保留一致性或恢复所需的信息，不承诺所有副本即时清除。卸载应用不一定删除 iCloud 中的数据，云端数据可通过 Apple 提供的 iCloud 储存管理方式管理；操作前请保留需要的备份。对已通过邮件提供的资料，可联系上述邮箱提出访问、更正或删除请求。"
+      ],
+      [
+        "本网站与第三方",
+        "本网站由 GitHub Pages 托管。托管服务可能为提供服务、安全和运维处理 IP 地址及访问日志等技术信息。本站页面没有添加广告、访问统计脚本、外部字体或注册表单；支持链接只会打开你自己的邮件应用，不会在本网站直接提交邮件。第三方链接的处理方式以各自政策为准。"
+      ],
+      [
+        "更新",
+        "当功能、服务或数据处理方式发生变化时，我们会更新本页并修改日期。正式版本的支付功能及其隐私说明如有增加，将按实际实现更新；本政策不表示尚未上线的购买功能已经可用。"
+      ]
+    ],
+    "en": [
+      [
+        "Scope and contact",
+        "This policy covers the Memory Music iPhone, iPad and Mac apps and this privacy and support website. Memory Music focuses on organizing and playing local music. Contact the developer about privacy or support at kenapple9527@gmail.com. Last updated: October 20, 2026."
+      ],
+      [
+        "Music and local information",
+        "You keep control of the music files you select. The app stores song information, source paths, tags, smart collections, playlists, memory notes, listening history, artwork and lyrics locally for organization, playback and on-device suggestions. It does not supply music downloads or upload original audio files to a developer server or CloudKit. Removing a library record and deleting a local file are separate actions; deleting local music requires your explicit selection and confirmation."
+      ],
+      [
+        "iCloud synchronization",
+        "In versions that support synchronization, the app uses a private Apple CloudKit database to automatically synchronize song identification information (including content hashes, available audio fingerprints and necessary song metadata), tags, notes, playlists, collection rules, listening history, associated artwork and text lyrics across devices using the same iCloud account. Synchronization also uses an app-generated device identifier and version and operation information. Audio files, complete SQLite databases, directory-access bookmarks and absolute local paths are excluded from synchronization payloads. Imported images retain their original file contents and may contain embedded metadata."
+      ],
+      [
+        "Apple account and permissions",
+        "Your CloudKit information is stored in your private iCloud database and may count toward your iCloud storage. Apple operates the account and service infrastructure. The app does not ask you to give the developer your Apple account password. System pickers grant access to directories and images you select; saved directory permissions allow later access. Background audio and notification capabilities support playback and synchronization. You can manage permissions and iCloud use in system settings."
+      ],
+      [
+        "Online lookups you initiate",
+        "When you request metadata or artwork, search information such as song title, artist and album may be sent to MusicBrainz. Artwork is retrieved through Cover Art Archive and its asset-hosting services. Audio identification sends a locally generated fingerprint, duration and your AcoustID Client Key to AcoustID, not the audio file. These services also receive IP addresses and technical request information needed for the connection. Their own policies govern retention and use. You can avoid these requests by not using the corresponding lookup features."
+      ],
+      [
+        "Advertising, tracking and support email",
+        "The current app does not integrate advertising, cross-app advertising tracking or a developer-operated behavioral analytics service. Suggestions use your information and listening history on the device, not an advertising profile. If you email support, your address, message and attachments reach the developer through email services and are used to handle your request and necessary follow-up. Please do not send passwords, complete private libraries or unnecessary sensitive information."
+      ],
+      [
+        "Retention, export and deletion",
+        "The app provides backup export and controls for managing or deleting supported records. Deletions require synchronization opportunities to reach other devices. Synchronization history, deletion markers and backups may retain information needed for consistency or recovery; not every copy is guaranteed to disappear immediately. Uninstalling the app does not necessarily delete iCloud data. You can manage cloud storage using Apple-provided iCloud controls; keep any backups you need before removal. Contact the support email to request access, correction or deletion of information you previously sent by email."
+      ],
+      [
+        "This website and third parties",
+        "This website is hosted by GitHub Pages. Hosting infrastructure may process IP addresses and access logs for service delivery, security and operations. These pages add no advertising, analytics scripts, external fonts or registration forms. Support links open your own email app and do not submit messages on this website. Third-party links have their own policies."
+      ],
+      [
+        "Changes",
+        "We will update this page and its date when features, services or data handling change. If payment features are added to a released version, their privacy information will be updated to match the implementation. This policy does not imply that unreleased purchasing features are available."
+      ]
+    ]
+  },
+  "support": {
+    "zh": [
+      [
+        "添加自己的音乐",
+        "打开设置中的“音乐来源”，使用系统选择器选中你希望使用的本地目录。音乐文件需要在每台设备上各自可用；同步整理信息不会替你传输音频。"
+      ],
+      [
+        "目录或歌曲暂时打不开",
+        "确认外接盘已连接、文件已下载且 App 仍有访问权限。必要时通过“音乐来源”重新选择同一目录。先保留原文件和备份，不要以删除整个资料库作为排查第一步。"
+      ],
+      [
+        "整理信息尚未同步",
+        "确认设备使用相同 iCloud 账户、联网且有可用 iCloud 空间。在设置中的“整理信息同步”查看状态。系统后台机会可能延迟，打开 App 后再观察；没有音频的设备不会自动获得音乐文件。"
+      ],
+      [
+        "备份与恢复",
+        "在设置中的“数据备份”导出资料。恢复前阅读预览与检查结果，并确认操作对象。备份保存整理资料和支持的用户资源；不要把同步当作原始音乐文件的备份。"
+      ],
+      [
+        "报告问题",
+        "邮件请写明 App 版本、设备及系统版本、复现步骤、预期与实际结果。截图请先隐藏私人信息。不需要提供 Apple 账户密码、完整数据库或整份音乐目录。"
+      ],
+      [
+        "下载与收费",
+        "应用正在进行发布准备。本站不销售许可证、不收款，也没有已上线的 App Store 下载链接。正式版本的可用地区和价格以届时 App Store 页面为准。"
+      ]
+    ],
+    "en": [
+      [
+        "Bring your own music",
+        "In Settings, open Music Sources and choose a local directory with the system picker. Music must be available separately on each device; synchronizing organization data does not transfer audio."
+      ],
+      [
+        "A directory or song is unavailable",
+        "Check that external storage is connected, files are downloaded and the app still has access. If needed, reselect the same directory in Music Sources. Keep original files and backups; do not begin troubleshooting by deleting the library."
+      ],
+      [
+        "Organization data has not synchronized",
+        "Check that devices use the same iCloud account, have connectivity and available iCloud storage. Review the organization synchronization status in Settings. Background opportunities can be delayed; open the app and check again. A device without the audio files will not receive them automatically."
+      ],
+      [
+        "Backup and restore",
+        "Export information using Data Backup in Settings. Review the preview and checks before restoring and confirm the target. Backups contain organization data and supported user resources. Synchronization is not a backup of original audio files."
+      ],
+      [
+        "Report an issue",
+        "Email the app version, device and OS version, reproduction steps, and expected versus actual results. Remove private information from screenshots. Do not send Apple account passwords, a complete database or your music directory."
+      ],
+      [
+        "Availability and pricing",
+        "The app is being prepared for release. This website does not sell licenses or take payments and has no live App Store download link. Availability and pricing will be shown on the App Store when the app is released."
+      ]
+    ]
+  }
+}
