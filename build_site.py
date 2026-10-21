@@ -5,6 +5,7 @@ from html import escape as e
 import json
 import shutil
 from product_home import render_home
+from carplay_page import render_carplay
 
 ROOT = Path(__file__).resolve().parent
 data = json.loads((ROOT / 'content.json').read_text())
@@ -53,7 +54,12 @@ for lang in ['zh', 'en']:
         page(lang, kind)
 shutil.copyfile(ROOT / 'style.css', out / 'style.css')
 (out / 'robots.txt').write_text('User-agent: *\nAllow: /\n')
-print('Built 6 static pages with local styles and artwork.')
+for lang in ['zh', 'en']:
+    dest = out / ('' if lang == 'zh' else 'en') / 'carplay'
+    dest.mkdir(parents=True, exist_ok=True)
+    (dest / 'index.html').write_text(render_carplay(lang, data['email']))
+shutil.copyfile(ROOT / 'carplay.css', out / 'carplay.css')
+print('Built 8 bilingual pages, including CarPlay.')
 
 shutil.copyfile(ROOT / 'product.css', out / 'product.css')
 shutil.copyfile(ROOT / 'product.js', out / 'product.js')
