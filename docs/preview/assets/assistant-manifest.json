@@ -1,0 +1,105 @@
+{
+  "build": "31",
+  "script": "Internal synthetic widget-render fixture (not published)",
+  "scriptSha256": "3bfff02f02916d7421f5d0229f9eb4345722a6aed32c9b7077fbf29c84348bfc",
+  "actualFlutterComponents": true,
+  "actualSources": [
+    "lib/main.dart:MemoryMusicApp/HomePage",
+    "lib/widgets/recommendation_deck.dart:RecommendationDeck",
+    "lib/widgets/recommendation_assistant.dart:RecommendationAssistantPanel",
+    "lib/widgets/assistant_morph_glyph.dart:AssistantMorphGlyph",
+    "lib/services/recommendation_service.dart:RecommendationService"
+  ],
+  "syntheticInput": {
+    "songs": 24,
+    "tags": 6,
+    "artwork": "original procedural abstract covers",
+    "audioFiles": 0,
+    "personalData": false,
+    "networkQueries": false
+  },
+  "recommendations": "20 locally ranked songs from actual RecommendationService; fixture explorationMode enabled in temporary preferences only",
+  "assistantQuestions": "Actual intent then mood UI, reached by tapping actual refresh and choice controls",
+  "glyphs": "Six actual targetStage renders at progress 0.5; isolated 400x400 transparent PNG; 1800x420 white contact sheet",
+  "rendering": "True BoxShadow blur enabled; full render subtree repainted to avoid stale screenshot cache omissions",
+  "validation": "Flutter widget-render test PASS; visual QA performed",
+  "limitations": [
+    "Widget-test component screenshots, not physical-device acceptance or real audio playback",
+    "Playback status and library records are fixed synthetic presentation fixtures",
+    "Current recommendation engine is local ranking and behavior signals, not external AI/LLM",
+    "Future AI habit-learning vision must be labeled planned, not shipped capability",
+    "System fonts rasterized only; no font files or third-party artwork exported"
+  ],
+  "recommended": [
+    "mac-recommendation.png",
+    "iphone-assistant-intent.png",
+    "iphone-recommendation.png",
+    "assistant-glyphs-contact.png"
+  ],
+  "assets": [
+    {
+      "name": "glyph-cassette.png",
+      "width": 400,
+      "height": 400,
+      "bytes": 7176,
+      "sha256": "36ab8f052228c246c3fd0373bc42a7948157379977145c2e0b0fd0de6c829267",
+      "transparent": true
+    },
+    {
+      "name": "glyph-flower.png",
+      "width": 400,
+      "height": 400,
+      "bytes": 7085,
+      "sha256": "a1f8bc4b488493e03a7b4dddf667beb9808b07df56b24d59367ab15f4f7ecd6d",
+      "transparent": true
+    },
+    {
+      "name": "glyph-headphones.png",
+      "width": 400,
+      "height": 400,
+      "bytes": 7319,
+      "sha256": "0c3cbd6e07d5638e3418797ffebe2c702846fb51d68fb234256014fee30d4014",
+      "transparent": true
+    },
+    {
+      "name": "glyph-moon.png",
+      "width": 400,
+      "height": 400,
+      "bytes": 7351,
+      "sha256": "dbda6e1a0daf0a187afe835d7488e3d2da27f2fbc884978450ea9ba6a5686fd7",
+      "transparent": true
+    },
+    {
+      "name": "glyph-star.png",
+      "width": 400,
+      "height": 400,
+      "bytes": 6367,
+      "sha256": "5a98bcb095c3fe420b9b529cdbf783cc61690f285c0dbe43650819ed5690a785",
+      "transparent": true
+    },
+    {
+      "name": "glyph-vinyl.png",
+      "width": 400,
+      "height": 400,
+      "bytes": 11118,
+      "sha256": "6f733460573a459c0df889d805a08ff4735dd990c7676261e9acc1b7c1716068",
+      "transparent": true
+    },
+    {
+      "name": "iphone-assistant-intent.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 782425,
+      "sha256": "528569ca9743bb371b3005bda56e8cde745dbfd6fe06f2e9339dd980f1380d99",
+      "transparent": false
+    },
+    {
+      "name": "mac-recommendation.png",
+      "width": 2560,
+      "height": 1600,
+      "bytes": 934716,
+      "sha256": "5b09d4ce781b5bb9f3320b93dc0f62c344450daf04d2f2242c578366ecaccffd",
+      "transparent": false
+    }
+  ]
+}
