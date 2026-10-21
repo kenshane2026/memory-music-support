@@ -1,0 +1,95 @@
+{
+  "source": "Current build31 MemoryMusicApp widgets, in-memory synthetic library only",
+  "audio_files": false,
+  "personal_database": false,
+  "third_party_artwork": false,
+  "device_capture": false,
+  "render_test": "PASS",
+  "app_source_modified": false,
+  "files": [
+    {
+      "file": "ipad-library.png",
+      "width": 2048,
+      "height": 2732,
+      "bytes": 901411,
+      "sha256": "4aa84439e85640e23deb7d3953f7b151fc03f144dfe15f5c406a85e366ccb97c"
+    },
+    {
+      "file": "ipad-memory.png",
+      "width": 2048,
+      "height": 2732,
+      "bytes": 598330,
+      "sha256": "5560600235b5004a1d835995563337afba295a811a5c31224d25a8f0630d891e"
+    },
+    {
+      "file": "ipad-spaces.png",
+      "width": 2048,
+      "height": 2732,
+      "bytes": 867006,
+      "sha256": "3a20ec2b6758caaea6c451f0808c83c236510e1737a320a7094b227adf40a5f3"
+    },
+    {
+      "file": "ipad-tags.png",
+      "width": 2048,
+      "height": 2732,
+      "bytes": 1060446,
+      "sha256": "5010ae8706cc30a365685ee8ba56f0f6f0105c3f522d808d6652c60ea4652719"
+    },
+    {
+      "file": "iphone-library.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 689614,
+      "sha256": "a1e2962588a272ded6dd57c461d752fec6c49f08bebbd118a44772f2dc790dc5"
+    },
+    {
+      "file": "iphone-memory.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 852386,
+      "sha256": "2be992f2b9c8140fb3658e2e87f68af76245619894a34930a06fa88c8a0aa2d3"
+    },
+    {
+      "file": "iphone-spaces.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 802820,
+      "sha256": "86ab09d5aeff8cc41cfe87d27ca259aa1f004e0a70be1340a31177078f576dec"
+    },
+    {
+      "file": "iphone-tags.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 865941,
+      "sha256": "69e5444788d3d2a9c078e8bb8a9f29e4d43a5a8cb83f341634c333923d140e83"
+    },
+    {
+      "file": "mac-library.png",
+      "width": 2560,
+      "height": 1600,
+      "bytes": 778913,
+      "sha256": "4b7b6d462bad8ee7fbfe7545b2c0f50645e5cffe6b3dbe3af8397ea74d61bb2f"
+    },
+    {
+      "file": "mac-memory.png",
+      "width": 2560,
+      "height": 1600,
+      "bytes": 506702,
+      "sha256": "305973b6fad518928d6c23f5090747ff9977c5e1dfd3d56d0b49430c1c4b3b1a"
+    },
+    {
+      "file": "mac-spaces.png",
+      "width": 2560,
+      "height": 1600,
+      "bytes": 789121,
+      "sha256": "c709a140900f8396f948abd6ae362ae0cc01556944bd97a4df1ecdc577b53f61"
+    },
+    {
+      "file": "mac-tags.png",
+      "width": 2560,
+      "height": 1600,
+      "bytes": 981895,
+      "sha256": "630684986639660c20a5357d3b299cb241997520ef290160a4700854d61dba95"
+    }
+  ]
+}

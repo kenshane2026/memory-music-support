@@ -56,5 +56,6 @@ shutil.copyfile(ROOT / 'style.css', out / 'style.css')
 print('Built 6 static pages with local styles and artwork.')
 
 shutil.copyfile(ROOT / 'product.css', out / 'product.css')
+shutil.copyfile(ROOT / 'product.js', out / 'product.js')
 shutil.copytree(ROOT / 'assets/product', out / 'assets', dirs_exist_ok=True)
 (out / '.nojekyll').touch()

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build an isolated public preview; the approved root pages stay uncommitted."""
+"""Maintain existing public preview URLs alongside the product homepage."""
 from pathlib import Path
 import shutil
 
@@ -13,7 +13,7 @@ for file in ['index.html','en/index.html','privacy/index.html','support/index.ht
     dest=preview/file
     dest.parent.mkdir(parents=True,exist_ok=True)
     dest.write_text(html)
-for file in ['style.css','product.css','icon.png']:
+for file in ['style.css','product.css','product.js','icon.png']:
     shutil.copyfile(out/file,preview/file)
 shutil.copytree(out/'assets',preview/'assets',dirs_exist_ok=True)
-print('Built isolated /preview/ pages. Do not stage root candidate pages before user review.')
+print('Built bilingual /preview/ pages with matching local assets.')
