@@ -1,0 +1,44 @@
+{
+  "build": "31",
+  "renderScriptSha256": "4b5346fa9b77311781a1ef948214cd8bbdd5be1d153846a5727a8158d8fc75d1",
+  "actualFlutterComponents": true,
+  "components": [
+    "MemoryMusicApp",
+    "HomeShell",
+    "MiniPlayer",
+    "PlayerPage",
+    "LyricsPage",
+    "LocalArtworkImage"
+  ],
+  "data": "Synthetic in-memory eight-song library with original procedural abstract covers and original LRC text",
+  "fixturePlayback": {
+    "playing": true,
+    "positionSeconds": 53,
+    "durationSeconds": 180,
+    "realAudioPlayback": false
+  },
+  "limitations": [
+    "Actual component render in Flutter widget test; not physical-device screenshots",
+    "Fixed presentation state; does not validate playback engine, device performance, StoreKit, or CloudKit",
+    "No device status bar or hardware chrome",
+    "No personal music, database, commercial covers, music files, or network queries used"
+  ],
+  "validation": "flutter test --no-pub ../../BuildTemp/website-player-render.dart PASS; visual inspection of all four PNG files passed",
+  "assets": [
+    {
+      "file": "iphone-player.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 767704,
+      "sha256": "49b886549394bcbf844acd29cdc22d1c7eabc6045fc5ec837c080e4f9265b083"
+    },
+    {
+      "file": "mac-tags-playing.png",
+      "width": 2560,
+      "height": 1600,
+      "bytes": 1077875,
+      "sha256": "3de1b60e612c1e5825ae40bc075df0441a81cda99382547a125d0fd3581fc8e1"
+    }
+  ],
+  "shadowRendering": "Real BoxShadow blur enabled through temporary AutomatedTestWidgetsFlutterBinding.disableShadows=false; no app source changes"
+}
