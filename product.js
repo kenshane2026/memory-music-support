@@ -35,3 +35,21 @@ for (const button of document.querySelectorAll('[data-zoom]')) {
 viewer.querySelector('button').addEventListener('click', () => viewer.close());
 viewer.addEventListener('click', event => { if (event.target === viewer) viewer.close(); });
 viewer.addEventListener('close', () => opener?.focus({preventScroll:true}));
+
+// Start only on screen; pause when hidden or explicitly paused by the visitor.
+const assistantShapes = document.querySelector('.morph-collection');
+const motionToggle = document.querySelector('[data-morph-toggle]');
+if (assistantShapes && motionToggle) {
+  const observer = new IntersectionObserver(entries => {
+    assistantShapes.classList.toggle('morph-running', entries[0].isIntersecting);
+  }, {threshold: 0.15});
+  observer.observe(assistantShapes);
+  const syncVisibility = () => assistantShapes.classList.toggle('morph-suspended', document.hidden);
+  syncVisibility();
+  document.addEventListener('visibilitychange', syncVisibility);
+  motionToggle.addEventListener('click', () => {
+    const paused = assistantShapes.classList.toggle('morph-paused');
+    motionToggle.setAttribute('aria-pressed', String(paused));
+    motionToggle.textContent = paused ? motionToggle.dataset.resumeLabel : motionToggle.dataset.pauseLabel;
+  });
+}

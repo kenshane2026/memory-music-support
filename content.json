@@ -1,12 +1,12 @@
 {
   "origin": "https://kenshane2026.github.io/memory-music-support",
   "email": "kenapple9527@gmail.com",
-  "updated": "2026-10-20",
+  "updated": "2026-10-22",
   "privacy": {
     "zh": [
       [
         "适用范围与联系",
-        "本政策适用于 Memory Music 的 iPhone、iPad 和 Mac 应用，以及本隐私与支持网站。Memory Music 以本地音乐整理与播放为核心。隐私或支持问题请联系开发者：kenapple9527@gmail.com。政策更新日期：2026 年 10 月 20 日。"
+        "本政策适用于 Memory Music 的 iPhone、iPad 和 Mac 应用，以及本隐私与支持网站。Memory Music 以本地音乐整理与播放为核心。隐私或支持问题请联系开发者：kenapple9527@gmail.com。政策更新日期：2026 年 10 月 22 日。"
       ],
       [
         "本机音乐与资料",
@@ -14,7 +14,7 @@
       ],
       [
         "iCloud 整理信息同步",
-        "在支持同步的版本中，App 使用 Apple CloudKit 的私人数据库，在同一 iCloud 账户的设备之间自动同步歌曲识别资料（包括内容哈希、可用的音频指纹和必要歌曲信息）、标签、备注、歌单、分类规则、播放记录，以及关联的封面图片和文本歌词。同步还使用应用生成的设备标识、版本及操作信息。音频文件、完整 SQLite 数据库、目录授权书签和本机绝对路径不作为同步载荷上传。图片保留导入时的文件内容，可能包含其原有元数据。"
+        "在支持同步的版本中，App 使用 Apple CloudKit 的私人数据库，在同一 iCloud 账户的设备之间自动同步歌曲识别资料（包括内容哈希、必要歌曲信息及已有的识别资料）、标签、备注、歌单、分类规则、播放记录，以及关联的封面图片和文本歌词。同步还使用应用生成的设备标识、版本及操作信息。音频文件、完整 SQLite 数据库、目录授权书签和本机绝对路径不作为同步载荷上传。图片保留导入时的文件内容，可能包含其原有元数据。"
       ],
       [
         "Apple 账户与权限",
@@ -25,8 +25,8 @@
         "在提供 Pro 的版本中，订阅和永久买断由 Apple App Store 与 StoreKit 处理。App 在设备上读取并验证 Apple 签名的交易、商品标识、有效期以及撤销或退款状态，用于解锁功能和恢复购买。Apple 处理付款与相关账户资料；开发者不接收银行卡号或 Apple 账户密码。App 不向开发者服务器或 CloudKit 上传收据、交易证明或购买账户资料，也不把 iCloud 账户当作付款证明。订阅到期后保留已有本机资料；恢复购买使用系统的媒体与购买项目账户。购买功能仍在发行准备与测试中，是否可购买及实际价格以 App 内 Apple 商店提供的信息为准。"
       ],
       [
-        "主动触发的在线资料查询",
-        "当你使用资料或封面补全时，歌曲标题、艺术家、专辑等查询条件可能发送到 MusicBrainz；封面图片通过 Cover Art Archive 及其资源托管服务获取。使用听歌识别时，本机生成的音频指纹、时长及你填写的 AcoustID Client Key 会发送到 AcoustID，不发送音频文件。服务端还会接收完成网络请求所需的 IP 地址和技术请求信息。第三方的保留及使用规则由其各自政策约束；不使用这些查询功能即可避免相应查询。"
+        "资料与封面的来源",
+        "歌曲资料、封面与歌词由你自行提供，或从已有的本地文件读取。当前发行准备版本不提供在线歌曲资料查询、在线封面补全或音频指纹识别，也不会向这些资料服务发送查询。你可以在歌曲详情中编辑资料、选择本地图片，并在歌词页面导入本地歌词文件。"
       ],
       [
         "广告、跟踪与支持邮件",
@@ -48,7 +48,7 @@
     "en": [
       [
         "Scope and contact",
-        "This policy covers the Memory Music iPhone, iPad and Mac apps and this privacy and support website. Memory Music focuses on organizing and playing local music. Contact the developer about privacy or support at kenapple9527@gmail.com. Last updated: October 20, 2026."
+        "This policy covers the Memory Music iPhone, iPad and Mac apps and this privacy and support website. Memory Music focuses on organizing and playing local music. Contact the developer about privacy or support at kenapple9527@gmail.com. Last updated: October 22, 2026."
       ],
       [
         "Music and local information",
@@ -56,7 +56,7 @@
       ],
       [
         "iCloud synchronization",
-        "In versions that support synchronization, the app uses a private Apple CloudKit database to automatically synchronize song identification information (including content hashes, available audio fingerprints and necessary song metadata), tags, notes, playlists, collection rules, listening history, associated artwork and text lyrics across devices using the same iCloud account. Synchronization also uses an app-generated device identifier and version and operation information. Audio files, complete SQLite databases, directory-access bookmarks and absolute local paths are excluded from synchronization payloads. Imported images retain their original file contents and may contain embedded metadata."
+        "In versions that support synchronization, the app uses a private Apple CloudKit database to automatically synchronize song identification information (including content hashes, necessary song metadata and existing identification information), tags, notes, playlists, collection rules, listening history, associated artwork and text lyrics across devices using the same iCloud account. Synchronization also uses an app-generated device identifier and version and operation information. Audio files, complete SQLite databases, directory-access bookmarks and absolute local paths are excluded from synchronization payloads. Imported images retain their original file contents and may contain embedded metadata."
       ],
       [
         "Apple account and permissions",
@@ -67,8 +67,8 @@
         "In versions offering Pro, Apple App Store and StoreKit handle subscriptions and the lifetime purchase. The app reads and verifies Apple-signed transactions, product identifiers, expiry and revocation or refund status on the device to unlock features and restore purchases. Apple processes payments and related account information; the developer does not receive card numbers or your Apple account password. The app does not upload receipts, transaction proof or purchase-account information to a developer server or CloudKit, and does not treat an iCloud account as proof of payment. Existing local information is retained after subscription expiry. Restore Purchases uses the system Media & Purchases account. Purchasing is still being prepared and tested for release; availability and actual prices are determined by the Apple store information shown in the app."
       ],
       [
-        "Online lookups you initiate",
-        "When you request metadata or artwork, search information such as song title, artist and album may be sent to MusicBrainz. Artwork is retrieved through Cover Art Archive and its asset-hosting services. Audio identification sends a locally generated fingerprint, duration and your AcoustID Client Key to AcoustID, not the audio file. These services also receive IP addresses and technical request information needed for the connection. Their own policies govern retention and use. You can avoid these requests by not using the corresponding lookup features."
+        "Sources of information and artwork",
+        "Song information, artwork and lyrics come from your existing local files or are added by you. The version being prepared for release does not offer online song-information lookup, online artwork lookup or audio fingerprint identification, and sends no queries to those services. Edit song details, choose a local image, or import a local lyrics file on the Lyrics page."
       ],
       [
         "Advertising, tracking and support email",
@@ -95,6 +95,10 @@
         "打开设置中的“音乐来源”，使用系统选择器选中你希望使用的本地目录。音乐文件需要在每台设备上各自可用；同步整理信息不会替你传输音频。"
       ],
       [
+        "添加歌曲资料、封面与歌词",
+        "歌曲资料、封面与歌词由你自行提供，或从已有的本地文件读取。当前发行准备版本不提供在线歌曲资料查询、在线封面补全或音频指纹识别，也不会向这些资料服务发送查询。你可以在歌曲详情中编辑资料、选择本地图片，并在歌词页面导入本地歌词文件。"
+      ],
+      [
         "目录或歌曲暂时打不开",
         "确认外接盘已连接、文件已下载且 App 仍有访问权限。必要时通过“音乐来源”重新选择同一目录。先保留原文件和备份，不要以删除整个资料库作为排查第一步。"
       ],
@@ -119,6 +123,10 @@
       [
         "Bring your own music",
         "In Settings, open Music Sources and choose a local directory with the system picker. Music must be available separately on each device; synchronizing organization data does not transfer audio."
+      ],
+      [
+        "Add song information, artwork and lyrics",
+        "Song information, artwork and lyrics come from your existing local files or are added by you. The version being prepared for release does not offer online song-information lookup, online artwork lookup or audio fingerprint identification, and sends no queries to those services. Edit song details, choose a local image, or import a local lyrics file on the Lyrics page."
       ],
       [
         "A directory or song is unavailable",

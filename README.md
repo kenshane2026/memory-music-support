@@ -26,3 +26,7 @@ are published in `assets/downloads/` and copied to `docs/downloads/`. Archive
 SHA-256 is shown on both pages. `rebuild.py` inside the archive builds unsigned
 macOS/iOS frameworks; it does not install or alter the application. The page
 does not claim full-app replacement or distribution clearance.
+
+Build33 removes all online metadata/artwork lookup and fingerprint identification.
+Manual editing/local artwork/lyrics are retained. Source downloads remain as a
+clearly marked build32 historical archive, not current application dependencies.
