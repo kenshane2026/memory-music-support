@@ -6,6 +6,7 @@ import json
 import shutil
 from product_home import render_home
 from carplay_page import render_carplay
+from open_source import render_open_source
 
 ROOT = Path(__file__).resolve().parent
 data = json.loads((ROOT / 'content.json').read_text())
@@ -43,7 +44,7 @@ def page(lang, kind):
             refs = '<p class="references"><a href="https://www.apple.com/legal/privacy/">Apple Privacy</a> · <a href="https://musicbrainz.org/doc/About/Privacy_Policy">MusicBrainz Privacy</a> · <a href="https://acoustid.org/">AcoustID</a> · <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy</a></p>'
         body = f'<div class="document"><aside class="toc"><p>{"本页内容" if zh else "ON THIS PAGE"}</p>{toc}</aside><article>{sections}{refs}{contact}</article></div>'
     html = f'''<!doctype html>
-<html lang="{'zh-CN' if zh else 'en'}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Memory Music · { {'home':'隐私与支持' if zh else 'Privacy & Support','privacy':privacy,'support':support}[kind] }</title><meta name="description" content="{e(lead)}"><meta name="theme-color" content="#faf8f5"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'"><link rel="icon" href="/icon.png"><link rel="stylesheet" href="/style.css"></head><body><a class="skip" href="#main">{'跳至正文' if zh else 'Skip to content'}</a><header><a class="brand" href="{prefix}/"><img src="/icon.png" width="40" height="40" alt=""><span>Memory Music<small>{'音乐与记忆' if zh else 'MUSIC & MEMORIES'}</small></span></a><nav aria-label="{'导航' if zh else 'Navigation'}">{nav}</nav></header><main id="main"><section class="hero"><p class="eyebrow">{section}</p><h1>{e(title).replace(chr(10),'<br>')}</h1><p class="lead">{e(lead)}</p><p class="updated">{'更新于' if zh else 'Updated'} 2026.10.20 <span>·</span> {'隐私与支持' if zh else 'Privacy & Support'}</p></section>{body}</main><footer><a class="footer-brand" href="{prefix}/">Memory Music</a><p>{'用音乐记录生活的每一刻。' if zh else 'A soundtrack to the moments you keep.'}</p><div><a href="{prefix}/privacy/">{privacy}</a><a href="{prefix}/support/">{support}</a><a href="mailto:{data['email']}">{data['email']}</a></div><small>© 2026 Memory Music</small></footer></body></html>'''
+<html lang="{'zh-CN' if zh else 'en'}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Memory Music · { {'home':'隐私与支持' if zh else 'Privacy & Support','privacy':privacy,'support':support}[kind] }</title><meta name="description" content="{e(lead)}"><meta name="theme-color" content="#faf8f5"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'"><link rel="icon" href="/icon.png"><link rel="stylesheet" href="/style.css"></head><body><a class="skip" href="#main">{'跳至正文' if zh else 'Skip to content'}</a><header><a class="brand" href="{prefix}/"><img src="/icon.png" width="40" height="40" alt=""><span>Memory Music<small>{'音乐与记忆' if zh else 'MUSIC & MEMORIES'}</small></span></a><nav aria-label="{'导航' if zh else 'Navigation'}">{nav}</nav></header><main id="main"><section class="hero"><p class="eyebrow">{section}</p><h1>{e(title).replace(chr(10),'<br>')}</h1><p class="lead">{e(lead)}</p><p class="updated">{'更新于' if zh else 'Updated'} 2026.10.20 <span>·</span> {'隐私与支持' if zh else 'Privacy & Support'}</p></section>{body}</main><footer><a class="footer-brand" href="{prefix}/">Memory Music</a><p>{'用音乐记录生活的每一刻。' if zh else 'A soundtrack to the moments you keep.'}</p><div><a href="{prefix}/open-source/">{'开源组件' if zh else 'Open source'}</a><a href="{prefix}/privacy/">{privacy}</a><a href="{prefix}/support/">{support}</a><a href="mailto:{data['email']}">{data['email']}</a></div><small>© 2026 Ken Shane</small></footer></body></html>'''
     dest = out / ('en' if not zh else '') / ('' if kind == 'home' else kind)
     dest.mkdir(parents=True, exist_ok=True)
     html = html.replace('href="/', 'href="/memory-music-support/').replace('src="/', 'src="/memory-music-support/')
@@ -59,7 +60,13 @@ for lang in ['zh', 'en']:
     dest.mkdir(parents=True, exist_ok=True)
     (dest / 'index.html').write_text(render_carplay(lang, data['email']))
 shutil.copyfile(ROOT / 'carplay.css', out / 'carplay.css')
-print('Built 8 bilingual pages, including CarPlay.')
+for lang in ['zh', 'en']:
+    dest = out / ('' if lang == 'zh' else 'en') / 'open-source'
+    dest.mkdir(parents=True, exist_ok=True)
+    (dest / 'index.html').write_text(render_open_source(lang, data['email']))
+shutil.copyfile(ROOT / 'open-source.css', out / 'open-source.css')
+shutil.copytree(ROOT / 'assets/downloads', out / 'downloads', dirs_exist_ok=True)
+print('Built 10 bilingual pages, including CarPlay and source materials.')
 
 shutil.copyfile(ROOT / 'product.css', out / 'product.css')
 shutil.copyfile(ROOT / 'product.js', out / 'product.js')
